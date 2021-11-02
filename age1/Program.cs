@@ -36,12 +36,28 @@ namespace age
             Console.ReadLine();
 
 
-            if (age < 15)
+                if (age < 15)
             {
                 Console.BackgroundColor = ConsoleColor.Black;
                 SmallFrame(50, 20);
                 Console.SetCursorPosition(50, 23);
-                Console.WriteLine("jsi dítě lol");
+                Console.WriteLine("you are child");
+                Console.ReadLine();
+            }
+                else if (age > 18 && age < 65)
+            {
+                Console.BackgroundColor = ConsoleColor.Black;
+                SmallFrame(50, 20);
+                Console.SetCursorPosition(50, 23);
+                Console.WriteLine("you are adult");
+                Console.ReadLine();
+            }
+                else if (age > 65 && age > 120)
+            {
+                Console.BackgroundColor = ConsoleColor.Black;
+                SmallFrame(50, 20);
+                Console.SetCursorPosition(50, 10);
+                Console.WriteLine("you are senior");
                 Console.ReadLine();
             }
 
